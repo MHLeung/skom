@@ -1,4 +1,5 @@
-MH_LAB_CAM | High-Definition ESP32-CAM
+# MH_LAB_CAM | High-Definition ESP32-CAM
+
 A robust, web-based camera system for the ESP32-CAM. This project features high-definition image capture, a smart dual-mode WiFi system (Station + Access Point), and a persistent user interface for laboratory and remote monitoring.
 
 Features
@@ -14,7 +15,7 @@ Mobile Optimized: A clean, dark-mode web interface designed specifically for sta
 
 Permanent Storage: Photos are saved to a microSD card and persist after power loss or unplugging.
 
-Hardware Requirements
+# Hardware Requirements
 ESP32-CAM Module (AI-Thinker model recommended)
 
 MicroSD Card (Formatted to FAT32)
@@ -30,7 +31,7 @@ EloquentESP32Cam library.
 
 WiFi and SD_MMC (Standard ESP32 core libraries).
 
-Configuration: Open the code and edit the following variables to match your environment:
+# Configuration: Open the code and edit the following variables to match your environment:
 
 LAB_SSID: Your laboratory router name.
 
@@ -38,7 +39,7 @@ LAB_PASS: Your laboratory router password.
 
 AP_PASS: The password you want for direct phone-to-camera connection.
 
-Upload:
+# Upload:
 
 Select "AI Thinker ESP32-CAM" in the Arduino IDE.
 
@@ -46,7 +47,7 @@ Ensure "PSRAM: Enabled" is selected in the Tools menu.
 
 Connect GPIO 0 to GND to enter flash mode, upload, then remove the jumper and reset.
 
-Operating Instructions
+# Operating Instructions
 Mode A: Laboratory WiFi
 Power on the camera within range of the configured router.
 
@@ -59,7 +60,7 @@ Connect your phone to the WiFi network: MH_LAB_CAM_PRO.
 
 Open your browser and navigate to: http://192.168.4.1.
 
-Interface Guide
+# Interface Guide
 ENABLE FLASH: Toggle the onboard LED. This setting is "sticky" and persists between captures.
 
 TAKE HD PHOTO: Captures a 1600x1200 image. Note: High-resolution processing requires 3 to 5 seconds to write to the SD card.
@@ -68,7 +69,7 @@ DELETE (Under Image): Removes only that specific file.
 
 DELETE ALL: Permanently clears all JPEG files from the microSD card.
 
-Troubleshooting
+# Troubleshooting
 Brownout Error: If the device resets during a photo, the power supply is insufficient. Ensure you are providing a steady 5V.
 
 Blurry Images: The lens is fixed-focus. To adjust, carefully remove the factory glue and rotate the lens barrel manually to find the sharpest focus point for your subject distance.

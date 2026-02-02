@@ -9,7 +9,7 @@ using namespace eloq;
 const char* LAB_SSID = "MH_LAB_CAM"; 
 const char* LAB_PASS = "camera413"; 
 const char* AP_SSID  = "MH_LAB_CAM_PRO"; 
-const char* AP_PASS  = "12345678";       
+const char* AP_PASS  = "camera413";       
 
 const int FLASH_PIN = 4; 
 int photoCounter = 0;
@@ -164,3 +164,4 @@ void loop() {
         client.stop();
     }
 }
+

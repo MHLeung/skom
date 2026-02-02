@@ -31,7 +31,8 @@ EloquentESP32Cam library.
 
 WiFi and SD_MMC (Standard ESP32 core libraries).
 
-# Configuration: Open the code and edit the following variables to match your environment:
+# Configuration: 
+# Open the code and edit the following variables to match your environment:
 
 LAB_SSID: Your laboratory router name.
 
